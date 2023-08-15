@@ -4,7 +4,7 @@
 ;   ld -s -o hello hello.o
 
 section .data
-    msg db 'Hello World!', 0xA
+    msg db 'Hello World!', 0xA, 0xD
     msg1 db 'Essa é uma mensagem aleatoria!', 0xA  
     tam equ $- msg
 
