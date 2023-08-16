@@ -13,7 +13,7 @@ segment .data
   STD_IN    equ 0x0     ; Entrada padrao
   STD_OUT   equ 0x1     ; Saida padrao
 
-section .data,
+section .data
   msg db "Entre com seu nome:", LF, NULL
   tam equ $- msg    ; Pegar o tamanho
 
