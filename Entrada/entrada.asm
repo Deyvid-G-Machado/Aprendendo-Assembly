@@ -18,7 +18,10 @@ section .data
   tam equ $- msg    ; Pegar o tamanho
 
 section .bss
-  nome resb 1   ; Eu valo que ela e uma entrada de byte
+  ; byte resb 1  | Para armazenar um número de 0 a 255
+  ; word resw 1  | Para armazenar um número de 0 a 65535
+  ; dword  resd 1 | Para armazenar um número de 0 a 4294967295
+  nome resb 1   ; Eu falo que ela e uma entrada de byte
 
 section .text
 
